@@ -48,9 +48,14 @@ print("=6=")
 dogList = ["Akita","Alaskan Malamute","Australian shepherd","Basset hound","Beagle","Boston terrier","Bulldog","Chihuahua","Cocker Spaniel","Collie","French Bulldog","Golden Retriever","Great Dane","Poodle","Russell Terrier","Scottish Terrier","Siberian Husky","Skye terrier","Smooth Fox terrier","Terrier","Whippet"]
 
 print("==6a==")
-# 6a iterate over dogList. print out where in each line the string Terrier can be found
-# (if it cannot be found, print -1). hint: use find() (see supplement two)
-# Case does not matter. It should match "Terrier" or "terrier"
+# 6a iterate over dogList. 
+# If the line contains "terrier" or "terrier", print out the 
+# character number where the string "Terrier" or "terrier" starts
+# For example, "Boston Terrier" should result in:
+# 7
+# However, if the line does not contain "terrier" or "Terrier", 
+# your code should print "-1"
+# hint: use find() (see supplement two)
 
 
 print("==6b==")
