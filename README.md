@@ -41,8 +41,11 @@ string
 for
 hw1.
 =4=
-[1, 2, 3, 4, 5, 'four']
+[1, 2, 3, 'four', 5, 6]
 =5=
+This
+is our
+test file.
 =6=
 ==6a==
 -1
