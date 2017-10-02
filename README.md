@@ -80,8 +80,13 @@ French Bulldog
 See the instructions in hw1-part3.py.
 
 Here is an example of what your output for this should look like, on hw1feed.txt:
+```
+3607 characters
+34 lines
+613 words
+```
 
-Note that your output may vary slightly depending on how you handle end of file characters. Your count should, however, include newline (\n) characters.
+Note that your output may vary slightly depending on how you handle end of file characters or what you count as a 'word.' Your count should, however, include newline (\n) characters.
 
 ## Just For Fun 1: Modify your code from part 3 to count only the lines with posts, not the lines with authors.
 (remember, you don't need to do just for fun exercises)
