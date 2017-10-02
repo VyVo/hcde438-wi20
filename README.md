@@ -7,11 +7,12 @@ What to hand in via Canvas and GitHub Classroom
 3. hw1-part3.py
 
 ## Part 1 - List and String operations
-At the top of the file hw1-part1.py, you should find the following two lines:
+At the top of the file hw1-part1.py, you should find the following three lines:
 
 ```python
 lst = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-s = "This is my HCDE310 test string"
+otherlst = ['a','b','c','d','e','f','g']
+s = "This is a test string for HCDE 310"
 ```
 
 In the hw1-part1.py file, add code to do the exercises as instructed in the code file.
