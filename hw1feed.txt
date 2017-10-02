@@ -1,0 +1,34 @@
+from: Sean Munson
+post: Hi Sam. I’ll post it by class Tuesday — I’ve been working on it today.  It’ll be due a week from tomorrow.
+from: Samuelle Saliba
+post: Hi, I was wondering when hw1 would be available on gitclassroom, is it due on tuesday?
+from: helene shea
+post: oh ok! thank you. :blush:
+from: Sean Munson
+post: Whichever is easiest for you is okay. Sorry for the inconsistency; this was one of the things that didn’t transition perfectly when I updated the assignments for this year.
+from: helene shea
+post: hello! should we hand in a pdf with parts 6, 7, and 8 or should we hand in hw0.py, hw0.txt, and our screenshot? the instructions for the homework says the following:  &gt; Attach a single document (PDF preferred), containing &gt; A screenshot of running your edited hw0.py (part 6) &gt; Text you write for parts 7 and 8, in hw0.txt  &gt; To turn it in on Canvas, visit the course page, click on assignments, find hw0, and upload hw0.py, hw0.txt, and your screenshot.  not quite sure which set of instructions to follow. thank you in advance! :blush:
+from: Asikur Rahman
+post: Okay, thanks.
+from: Sean Munson
+post: that should be okay. It used Python 3, which is what matters most. Some of the readings may not line up perfectly (and some of the review questions will be different), so just be aware of that when I suggest readings
+from: Asikur Rahman
+post: Would it be okay to use the second edition of Python Programming: An Introduction to Computer Science for this course?
+from: Kelly Xu
+post: <!here> currently hosting office hours in sieg 422, if you need help or have questions :grin:
+from: Alex Gilbert
+post: <!here> my first office hours are today in the hcde student lounge (sieg 422) at 10am, if you need help with setup or have any questions about the class or even about life in general!
+from: Alex Gilbert
+post: <@U7AAFRR51> if you visit your repository on the hcde310 GitHub (probably called hw0-&lt;yourgithubusername&gt;) you should be able to view the contents of hw0 online and you can check if it's the code you wanted uploaded!
+from: Sam O'Brien
+post: I'm having some trouble uploading hw0 github classroom.  Is there any way to check if the homework was successfully pushed to github?
+from: Christina Chung
+post: Office hours are in the student lounge in the Sieg Hall (422).
+from: Samuelle Saliba
+post: where are the office hours? I'm not sure if I just missed it but i cant seem to find it
+from: Sean Munson
+post: <@U6XHUEVQB> uploaded a file: <https://hcde310.slack.com/files/U6XHUEVQB/F7BEDTW94/pasted_image_at_2017_09_28_01_33_pm.png|and our revised tentative office hour schedule>
+from: Sean Munson
+post: One other note — DRS is looking for at least two notetakers to assist a student this quarter. Please consider notetaking as it will help your peer gain access to material from class. Notetakers will receive a letter of recommendation for their service from the Director of Disability Resources for Students when the quarter is complete.  (I also think that taking notes meant to be understandable by others can also be a valuable exercise for yourself.)  Now that you all know the structure of the class, and the general plan to make most slides available before class starts, please consider this request and message me privately if you’d be willing to help take notes.
+from: Sean Munson
+post: hi all — some of you are finding that when you first open your hw in pycharm, the run button is disabled. To get around this (after you have selected a Python interpreter), you should be able to right click on hw0.py in the sidebar and select run
