@@ -19,17 +19,74 @@ In the hw1-part1.py file, add code to do the exercises as instructed in the code
 From a terminal (or from PyCharm) execute the hw1-part1.py file.
 
 ## Part 2: Exercises
-See the instructions in hw2-part2.py. Your output should look something like:
+See the instructions in hw1-part2.py. Your output should look something like:
+
+```
+=1=
+1
+2
+3
+4
+5
+6
+=2=
+21
+=3=
+This
+is
+a
+test
+string
+for
+hw1.
+=4=
+[1, 2, 3, 4, 5, 'four']
+=5=
+=6=
+==6a==
+-1
+-1
+-1
+-1
+-1
+7
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+-1
+8
+9
+-1
+5
+11
+0
+-1
+==6b==
+One
+One
+One
+One
+==6c==
+Bulldog
+French Bulldog
+```
+
 
 ## Part 3: Counting lines, characters, and words
-See the instructions in hw2-part3.py
+See the instructions in hw1-part3.py.
 
-Here is an example of what your output for this should look like, on hw2feed.txt:
+Here is an example of what your output for this should look like, on hw1feed.txt:
+
+Note that your output may vary slightly depending on how you handle end of file characters. Your count should, however, include newline (\n) characters.
 
 ## Just For Fun 1: Modify your code from part 3 to count only the lines with posts, not the lines with authors.
 (remember, you don't need to do just for fun exercises)
 
-You’ll need to use conditionals and find() or slices for this.  See exercise 6 for some ideas.
+You'll need to use conditionals and find() or slices for this.  See exercise 6 for some ideas.
 
 ## Just for Fun 2: Most common word in Sherlock Holmes?
 We haven't covered everything you need in Python to do this yet (in particular, we haven't talked about dictionaries yet). But think about how a program could figure out what was the most common word in a document, say the Sherlock Holmes text that I provide with this homework (sherlock.txt). Thinking about this problem now will help you appreciate the value of dictionaries when we learn about them next week.
