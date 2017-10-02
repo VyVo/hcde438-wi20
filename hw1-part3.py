@@ -19,13 +19,15 @@
 #    rstrip()
 
 
-print "----------"
+print("----------")
 
 # Try to make your program work first on test.txt, which has 22 characters, 3
 # lines, and 5 words. (Note: end of line characters are included in this
-# character count!) Then look at the contents of hw2feed.txt, so you can get a
+# character count!) 
+#
+# Then look at the contents of hw1feed.txt, so you can get a
 # sense of the right answers, approximately. It's data extracted from our class
-# Facebook group! Run your program work on hw2feed.txt and sherlock.txt. Take a
+# Facebook group! Run your program work on hw1feed.txt and sherlock.txt. Take a
 # screenshot of the output when running it on hw2feed.txt
 
 fname = "test.txt"
@@ -38,6 +40,6 @@ numWords = 0
 
 
 # output code below is provided for you; you should not edit this
-print(numChars, 'characters')
-print(numLines, 'lines')
-print(numWords, 'words')
+print('%d characters'%numChars)
+print('%d lines'%numLines)
+print('%d words'%numWords)
