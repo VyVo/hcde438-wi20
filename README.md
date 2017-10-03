@@ -85,7 +85,7 @@ See the instructions in hw1-part3.py.
 
 Here is an example of what your output for this should look like, on hw1feed.txt:
 ```
-3607 characters
+3591 characters 
 34 lines
 613 words
 ```
