@@ -27,11 +27,11 @@ print("----------")
 #
 # Then look at the contents of hw1feed.txt, so you can get a
 # sense of the right answers, approximately. It's data extracted from our class
-# Facebook group! Run your program work on hw1feed.txt and sherlock.txt. Take a
+# Slack channel! Run your program work on hw1feed.txt and sherlock.txt. Take a
 # screenshot of the output when running it on hw2feed.txt
 
 fname = "test.txt"
-#fname = raw_input("Please enter a file name: ")
+#fname = input("Please enter a file name: ")
 numChars = 0
 numLines = 0
 numWords = 0
