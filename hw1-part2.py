@@ -49,7 +49,7 @@ dogList = ["Akita","Alaskan Malamute","Australian shepherd","Basset hound","Beag
 
 print("==6a==")
 # 6a iterate over dogList. 
-# If the line contains "terrier" or "terrier", print out the 
+# If the line contains "terrier" or "Terrier", print out the 
 # character number where the string "Terrier" or "terrier" starts
 # For example, "Boston Terrier" should result in:
 # 7
