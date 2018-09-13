@@ -1,6 +1,6 @@
 lst = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 otherlst = ['a','b','c','d','e','f','g']
-s = "This is a test string for HCDE 310"
+s = "This is a test string for HCDE 310 - Au18"
 
 #Exercise 1 (working with a list):
 #a.	Print the first element of lst
