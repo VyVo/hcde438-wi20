@@ -1,5 +1,5 @@
 # Homework 1
-Due 	Monday, October 8, 8pm
+Due Monday, October 8, 8pm
 
 What to hand in via Canvas and GitHub Classroom
 1. hw1-part1.py
