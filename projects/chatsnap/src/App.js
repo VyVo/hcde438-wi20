@@ -1,18 +1,50 @@
 import React, {useState, useEffect} from 'react'
 import './App.css'
-// import {db} from './db'
+import {db, useDB} from './db'
 import NamePicker from './namePicker'
+import { BrowserRouter, Route } from 'react-router-dom'
+import Camera from 'react-snap-pic'
+import {FiCamera} from 'react-icons/fi'
+import * as firebase from "firebase/app"
+import "firebase/storage"
 
-function App() {
-  const [messages, setMessages] = useState([])
+function App(){
+  useEffect(()=>{
+    const {pathname} = window.location
+    if(pathname.length<2) window.location.pathname='home'
+  }, [])
+  return <BrowserRouter>
+    <Route path="/:room" component={Room} />
+  </BrowserRouter>
+}
+
+
+function Room(props) {
+  const {room} = props.match.params
   const [name, setName] = useState('')
+  const [showCamera, setShowCamera] = useState(false)
+  const messages = useDB(room)
+
+  async function takePicture(img) {
+    setShowCamera(false)
+    const imgID = Math.random().toString(36).substring(7)
+    var storageRef = firebase.storage().ref()
+    var ref = storageRef.child(imgID + '.jpg')
+    await ref.putString(img, 'data_url')
+    db.send({ 
+      img: imgID, name, ts: new Date(), room 
+    })
+  }
+
   return <main>
+
+    {showCamera && <Camera takePicture={takePicture} />}
 
     <header>
       <div className="logo-wrap">
         <img className="logo"
           alt="logo"
-          src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ca9f2274597569.5c34d66faf8c0.gif" 
+          src="https://images.coollogo.com/images/prism-large-green.png" 
         />
         Chatter
       </div>
@@ -20,25 +52,51 @@ function App() {
     </header>
 
     <div className="messages">
-      {messages.map((m,i)=>{
-        return <div key={i} className="message-wrap">
-          <div className="message">{m.text}</div>
-        </div>
-      })}
+      {messages.map((m,i)=> <Message key={i} 
+        m={m} name={name} 
+      />)}
     </div>
 
-    <TextInput onSend={(text)=> {
-      setMessages([text, ...messages])
-    }} />
+    <TextInput 
+      showCamera={()=>setShowCamera(true)}
+      onSend={(text)=> {
+        db.send({
+          text, name, ts: new Date(), room
+        })
+      }} 
+    />
     
   </main>
 }
 
+const bucket = 'https://firebasestorage.googleapis.com/v0/b/chatter-wi2020.appspot.com/o/'
+const suffix = '.jpg?alt=media'
+
+function Message({m, name}){
+  return <div className="message-wrap"
+    from={m.name===name?'me':'you'}
+    onClick={()=>console.log(m)}>
+    <div className="message">
+      <div className="msg-name">{m.name}</div>
+      <div className="msg-text">
+        {m.text}
+        {m.img && <img src={bucket + m.img + suffix} alt="pic" />}
+      </div>
+    </div>
+  </div>
+}
+
+
 
 function TextInput(props){
   var [text, setText] = useState('') 
+
   // normal js comment
   return <div className="text-input-wrap">
+    <button onClick={props.showCamera}
+      style={{position:'absolute', left:2, top:10}}>
+      <FiCamera style={{height:15, width:15}} />
+    </button>
     <input 
       value={text} 
       className="text-input"
@@ -62,17 +120,3 @@ function TextInput(props){
 }
 
 export default App
-
-
-/*
-useEffect(()=>{
-    db.listen({
-      receive: m=> {
-        setMessages(current=> [m, ...current])
-      },
-      remove: id=> {
-        setMessages(current=> [...current].filter(m => m.id !== id))
-      },
-    })
-  },[])
-*/
